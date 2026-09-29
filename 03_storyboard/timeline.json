@@ -1,0 +1,358 @@
+{
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "S01",
+      "from_frame": 0,
+      "dur_frame": 228,
+      "captions": [
+        {
+          "id": "S01-1",
+          "text": "四万年前，有人第一次抬头，看了很久。",
+          "en": "Someone looked up, and looked for a long time.",
+          "audio_ms": 4052,
+          "in_ms": 300,
+          "out_ms": 4352,
+          "in_frame": 9,
+          "out_frame": 131
+        },
+        {
+          "id": "S01-2",
+          "text": "头顶的星空，是第一块屏幕。",
+          "en": "The first screen was the sky.",
+          "audio_ms": 2508,
+          "in_ms": 4702,
+          "out_ms": 7210,
+          "in_frame": 141,
+          "out_frame": 216
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "from_frame": 228,
+      "dur_frame": 315,
+      "captions": [
+        {
+          "id": "S02-1",
+          "text": "灼烧的龟甲裂开，人们相信，那是回答。",
+          "en": "The shell cracked; they believed it was an answer.",
+          "audio_ms": 3831,
+          "in_ms": 7910,
+          "out_ms": 11741,
+          "in_frame": 237,
+          "out_frame": 352
+        },
+        {
+          "id": "S02-2",
+          "text": "提问，灼烧，裂纹，刻写——一次问答的仪式。",
+          "en": "Ask, burn, crack, carve — a ritual of question and answer.",
+          "audio_ms": 5631,
+          "in_ms": 12091,
+          "out_ms": 17722,
+          "in_frame": 363,
+          "out_frame": 532
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "from_frame": 544,
+      "dur_frame": 241,
+      "captions": [
+        {
+          "id": "S03-1",
+          "text": "如果宇宙是一粒沙，谁来数得完？",
+          "en": "If the universe were sand, who could count it?",
+          "audio_ms": 3239,
+          "in_ms": 18422,
+          "out_ms": 21661,
+          "in_frame": 553,
+          "out_frame": 650
+        },
+        {
+          "id": "S03-2",
+          "text": "他先造出能写到八乘十的六十三次方的语言。",
+          "en": "So he invented a language for numbers that large.",
+          "audio_ms": 3750,
+          "in_ms": 22011,
+          "out_ms": 25761,
+          "in_frame": 660,
+          "out_frame": 773
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "from_frame": 785,
+      "dur_frame": 290,
+      "captions": [
+        {
+          "id": "S04-1",
+          "text": "公元六二八年，\"没有\"第一次有了名字。",
+          "en": "In 628, \"nothing\" was given a name.",
+          "audio_ms": 4087,
+          "in_ms": 26461,
+          "out_ms": 30548,
+          "in_frame": 794,
+          "out_frame": 916
+        },
+        {
+          "id": "S04-2",
+          "text": "他连零除以零都敢算——虽然，他算错了。",
+          "en": "He even tried 0 ÷ 0 — and got it wrong.",
+          "audio_ms": 4516,
+          "in_ms": 30898,
+          "out_ms": 35414,
+          "in_frame": 927,
+          "out_frame": 1062
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "from_frame": 1074,
+      "dur_frame": 287,
+      "captions": [
+        {
+          "id": "S05-1",
+          "text": "滴，答。人类第一次，把话送得比马快。",
+          "en": "Dot, dash. For the first time, words outran the horse.",
+          "audio_ms": 5120,
+          "in_ms": 36114,
+          "out_ms": 41234,
+          "in_frame": 1083,
+          "out_frame": 1237
+        },
+        {
+          "id": "S05-2",
+          "text": "只用一短一长，就说尽了人间的名字。",
+          "en": "Short and long, and every name could be said.",
+          "audio_ms": 3413,
+          "in_ms": 41584,
+          "out_ms": 44997,
+          "in_frame": 1248,
+          "out_frame": 1350
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "from_frame": 1362,
+      "dur_frame": 274,
+      "captions": [
+        {
+          "id": "S06-1",
+          "text": "香农给万物找到了同一把尺子：比特。",
+          "en": "Shannon found one ruler for everything: the bit.",
+          "audio_ms": 3959,
+          "in_ms": 45697,
+          "out_ms": 49656,
+          "in_frame": 1371,
+          "out_frame": 1490
+        },
+        {
+          "id": "S06-2",
+          "text": "从此，声音有了重量，图像有了长短。",
+          "en": "Sound gained weight; images gained length.",
+          "audio_ms": 4133,
+          "in_ms": 50006,
+          "out_ms": 54139,
+          "in_frame": 1500,
+          "out_frame": 1624
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "from_frame": 1636,
+      "dur_frame": 307,
+      "captions": [
+        {
+          "id": "S07-1",
+          "text": "一九五〇年，一篇论文的第一句，是一个问题：",
+          "en": "In 1950, a paper opened with a question:",
+          "audio_ms": 4342,
+          "in_ms": 54839,
+          "out_ms": 59181,
+          "in_frame": 1645,
+          "out_frame": 1775
+        },
+        {
+          "id": "S07-2",
+          "text": "机器能思考吗？六年后，它有了名字。",
+          "en": "Can machines think? Six years later, it had a name.",
+          "audio_ms": 4853,
+          "in_ms": 59531,
+          "out_ms": 64384,
+          "in_frame": 1786,
+          "out_frame": 1932
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "from_frame": 1944,
+      "dur_frame": 245,
+      "captions": [
+        {
+          "id": "S08-1",
+          "text": "三千年来，第一次，由机器来接这个问题。",
+          "en": "For the first time in three thousand years, a machine caught the question.",
+          "audio_ms": 4180,
+          "in_ms": 65084,
+          "out_ms": 69264,
+          "in_frame": 1953,
+          "out_frame": 2078
+        },
+        {
+          "id": "S08-2",
+          "text": "有人开始对它说，只肯对它说的话。",
+          "en": "Some began telling it what they told no one else.",
+          "audio_ms": 2937,
+          "in_ms": 69614,
+          "out_ms": 72551,
+          "in_frame": 2088,
+          "out_frame": 2177
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "from_frame": 2189,
+      "dur_frame": 273,
+      "captions": [
+        {
+          "id": "S09-1",
+          "text": "机器学会说话的三十年后，它学会了赢。",
+          "en": "Thirty years after it learned to talk, the machine learned to win.",
+          "audio_ms": 4214,
+          "in_ms": 73251,
+          "out_ms": 77465,
+          "in_frame": 2198,
+          "out_frame": 2324
+        },
+        {
+          "id": "S09-2",
+          "text": "决胜局第十九步，世界冠军停了钟。",
+          "en": "Game six, move nineteen: the champion stopped the clock.",
+          "audio_ms": 3831,
+          "in_ms": 77815,
+          "out_ms": 81646,
+          "in_frame": 2334,
+          "out_frame": 2449
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "from_frame": 2461,
+      "dur_frame": 317,
+      "captions": [
+        {
+          "id": "S10-1",
+          "text": "每个词都是一颗星，词与词之间，连出了星座。",
+          "en": "Every word a star; between them, constellations.",
+          "audio_ms": 4389,
+          "in_ms": 82346,
+          "out_ms": 86735,
+          "in_frame": 2470,
+          "out_frame": 2602
+        },
+        {
+          "id": "S10-2",
+          "text": "那年，一篇论文的标题说：注意力就是一切。",
+          "en": "Attention is all you need.",
+          "audio_ms": 5120,
+          "in_ms": 87085,
+          "out_ms": 92205,
+          "in_frame": 2613,
+          "out_frame": 2766
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "from_frame": 2778,
+      "dur_frame": 287,
+      "captions": [
+        {
+          "id": "S11-1",
+          "text": "有人说，碳基文明只是硅基文明的初始库。",
+          "en": "Some say carbon life is the seed library of silicon.",
+          "audio_ms": 4005,
+          "in_ms": 92905,
+          "out_ms": 96910,
+          "in_frame": 2787,
+          "out_frame": 2907
+        },
+        {
+          "id": "S11-2",
+          "text": "也有人说，预测下一个词，需要的正是智慧。",
+          "en": "To predict the next token well is to understand.",
+          "audio_ms": 4516,
+          "in_ms": 97260,
+          "out_ms": 101776,
+          "in_frame": 2918,
+          "out_frame": 3053
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "from_frame": 3065,
+      "dur_frame": 259,
+      "captions": [
+        {
+          "id": "S12-1",
+          "text": "把四万年的线索，重新画成一棵树：",
+          "en": "Four hundred centuries, redrawn as one tree:",
+          "audio_ms": 2984,
+          "in_ms": 102476,
+          "out_ms": 105460,
+          "in_frame": 3074,
+          "out_frame": 3164
+        },
+        {
+          "id": "S12-2",
+          "text": "有人猜它五年内开，有人说还要等二十年。",
+          "en": "Some guess five years; some say twenty more.",
+          "audio_ms": 4598,
+          "in_ms": 105810,
+          "out_ms": 110408,
+          "in_frame": 3174,
+          "out_frame": 3312
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "from_frame": 3324,
+      "dur_frame": 259,
+      "captions": [
+        {
+          "id": "S13-1",
+          "text": "星空变成了屏幕，问题从未停止。",
+          "en": "The sky became a screen; the questions never stopped.",
+          "audio_ms": 3959,
+          "in_ms": 111108,
+          "out_ms": 115067,
+          "in_frame": 3333,
+          "out_frame": 3452
+        },
+        {
+          "id": "S13-2",
+          "text": "四万年后，按下手的，是你。",
+          "en": "Four hundred centuries on, the next hand is yours.",
+          "audio_ms": 3622,
+          "in_ms": 115417,
+          "out_ms": 119039,
+          "in_frame": 3463,
+          "out_frame": 3571
+        }
+      ]
+    }
+  ],
+  "total_ms": 119439,
+  "total_frames": 3583
+}

@@ -1,0 +1,928 @@
+{
+  "$comment": "ep01 storyboard · 依据 02_script/ep01-script.md v2.2 冻结版。字幕逐字复制自剧本，不得改写。",
+  "$schema_note": {
+    "mode": "dark=深底白字 | paper=浅底深字（S06 已验证双主题必要）",
+    "anchors": "归一化坐标(%)，与底图同一 transform 空间。★必须在底图定稿后目视标定，禁止代码猜（教训：星芒 y:52% 实为 44%）。未标定者标 TBD。",
+    "plate.prompt": "构图指令已内联；每条都含『无任何文字/字母/数字/水印』负向约束与『无正脸人物』红线。",
+    "scale": "静图场 ≤1.05、视频场 ≤1.06（v1.0 §15.4 硬上限）",
+    "captions": "narration=false 时按 in_frac/out_frac 排；narration=true 时由 tools/timeline.mjs 用 TTS 真实 audio_length 重算，in_frac 作废",
+    "plate.alt_src": "一场需要两张底图时才写（目前只有 S13）。kind=none 的场不许出现 src。"
+  },
+  "episode": "ep01",
+  "title_zh": "下一个问题",
+  "title_en": "Your Next Question",
+  "fps": 30,
+  "resolution": [
+    1280,
+    720
+  ],
+  "narration": false,
+  "total_frames": 5400,
+  "shots": [
+    {
+      "id": "S01",
+      "era": "C. 40,000 BCE",
+      "stamp_en": "C. 40,000 BCE",
+      "stamp_cn": "旧石器时代 · 星空下",
+      "mode": "dark",
+      "dur_sec": 10,
+      "dur_frame": 300,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "四万年前，有人第一次抬头，看了很久。",
+          "en": "Someone looked up, and looked for a long time.",
+          "in_frac": 0.16,
+          "out_frac": 0.52
+        },
+        {
+          "n": 2,
+          "cn": "头顶的星空，是第一块屏幕。",
+          "en": "The first screen was the sky.",
+          "in_frac": 0.55,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "video",
+        "src": "assets/S01.mp4",
+        "scale": [
+          1.02,
+          1.05
+        ],
+        "origin": "62% 40%",
+        "prompt": "Long-exposure night photograph: a vast brilliant Milky Way arcing from the lower right up to the upper left, its galactic core glowing with visible dust lanes and colour, hundreds of sharp stars across the whole sky. On a dark rocky ridge in the lower third, a single seated human figure seen from behind in silhouette, large enough to read clearly as a person, head tilted upward. A small campfire beside them throws warm amber rim light along the shoulder and cheek and lights a pool of ground. Photoreal, shot on 35mm film, deep blue-black sky, high dynamic range, correctly exposed for the stars.",
+        "video_candidate": true,
+        "video_note": "v3(09-29 ¥5)：星野清晰无涂抹、银河缓旋、火堆从余烬烧成明火、人物剪影逐帧零位移（红绿双帧叠影实测）→ 整幅直接用视频，不再叠任何静止遮罩层",
+        "roll": "r1",
+        "prompt_v1_rejected": "mean 11.3 / >60 仅 1.36%，全片最暗；人影是小黑坨、火堆一小片。根因是统一前缀的 low-key lighting",
+        "style": "darkBright",
+        "negative_note": " no underexposed muddy sky, no empty black regions, no tiny unrecognisable figure, no face detail, no modern objects, no aircraft, no moon, no text, no letters, no watermark."
+      },
+      "anchors": [
+        {
+          "role": "spark",
+          "x": 62,
+          "y": 22,
+          "at": 60,
+          "note": "最亮那颗星的珊瑚微光 —— TBD 待目视标定"
+        }
+      ],
+      "graphics": "none",
+      "fact_refs": [
+        "paleolithic-stargazing-40000bce"
+      ],
+      "rhetoric_flag": true,
+      "music_cue": "low-drone-in",
+      "qc_veto": true
+    },
+    {
+      "id": "S02",
+      "era": "C. 1300 BCE",
+      "stamp_en": "C. 1300 BCE",
+      "stamp_cn": "殷 · 占卜的裂纹",
+      "mode": "dark",
+      "dur_sec": 17,
+      "dur_frame": 510,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "灼烧的龟甲裂开，人们相信，那是回答。",
+          "en": "The shell cracked; they believed it was an answer.",
+          "in_frac": 0.15,
+          "out_frac": 0.5
+        },
+        {
+          "n": 2,
+          "cn": "提问，灼烧，裂纹，刻写——一次问答的仪式。",
+          "en": "Ask, burn, crack, carve — a ritual of question and answer.",
+          "in_frac": 0.531,
+          "out_frac": 0.9571
+        }
+      ],
+      "plate": {
+        "kind": "image",
+        "src": "assets/S02.png",
+        "scale": [
+          1,
+          1.05
+        ],
+        "origin": "50% 60%",
+        "prompt": "Ancient Shang dynasty divination scene, dark bronze tones: a dried, flat turtle plastron and a polished ox scapula lying on packed earth, no living creature anywhere in the frame, only the dry carved shell. Flames lick the lower edge of the plastron from the very bottom of the frame, warm amber light rising upward. The shell surface is smooth and unbroken, with no fissures on it. Bronze-green accents inside a warm amber palette, shallow depth of field, heavy film grain, strong vignette.",
+        "negative": "★底图必须无裂纹：裂纹由代码描边生长，若底图自带裂纹会穿帮",
+        "roll": "r1"
+      },
+      "anchors": [
+        {
+          "role": "crack_origin",
+          "x": 50,
+          "y": 62,
+          "at": 40,
+          "note": "主裂纹起点（卜字形放射向上）—— TBD"
+        },
+        {
+          "role": "spark",
+          "x": 50,
+          "y": 40,
+          "at": 120,
+          "note": "裂纹中心朱砂点 —— TBD"
+        }
+      ],
+      "graphics": "crack-grow + carved-glyph-reveal",
+      "fact_refs": [
+        "oracle-bones-1300bce"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "fire-low"
+    },
+    {
+      "id": "S03",
+      "era": "III CENTURY BCE",
+      "stamp_en": "III CENTURY BCE",
+      "stamp_cn": "叙拉古 · 数沙",
+      "mode": "dark",
+      "dur_sec": 10,
+      "dur_frame": 300,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "把宇宙装满沙粒，谁来数到尽头？",
+          "en": "Fill the universe with sand — who could count it to the end?",
+          "in_frac": 0.15,
+          "out_frac": 0.5
+        },
+        {
+          "n": 2,
+          "cn": "他造出一种语言，装得下八乘十的六十三次方。",
+          "en": "So he made a language large enough to hold it.",
+          "in_frac": 0.53,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "video",
+        "src": "assets/S03.mp4",
+        "scale": [
+          1,
+          1.05
+        ],
+        "origin": "50% 55%",
+        "prompt": "Night in the desert after moonset, photoreal film still: a vast dune field whose sand is warmly lit by a small campfire burning at the lower right edge of frame, long shadows and crisp wind ripples with individual grains catching the light. A tiny distant crouching human silhouette in the lower-right third, under 12 percent of frame height, drawing lines in the sand with one hand. The upper third of the frame is deep blue-black night sky with only a few first stars and no Milky Way. The mid-lower sand is generously exposed and clearly readable; darkness lives only in the sky and at the frame edges.",
+        "negative": "★人影必须小且远：剪影高度 <12% 画面、位于右下 1/3；上 1/3 留给夜空；中下与底部留给代码层与字幕",
+        "roll": "r7",
+        "style": "warmNight",
+        "prompt_v2_rejected": "v1 底图 mean 27.3 但沙面在暗部、人影占画面 13%×28%（比 S01 还大）；用户 2026-09-28：很暗、看不到沙子、很简陋。v2 改月落后暖沙 + 远景小剪影。",
+        "negative_note": " no underexposed muddy sand, no black dunes, no bright Milky Way, no large or near human figure, no face, no readable characters, no text, no watermark, no modern objects.",
+        "cand_note": "r4 沙面仍泥(11.8)；r5 过曝 3.04% 顶破闸门；r6 左上带一缕银河（S01 专属母题不该复现）；r9 火光呈放射状阴影辐条太假；r8 沙偏暗。取 r7：人影最小(~10% 画面高)、沙纹全幅可读、火在画内、夜空只有初星、过曝 2.69% 有余量。"
+      },
+      "anchors": [
+        {
+          "role": "tower_base",
+          "x": 55,
+          "y": 74,
+          "at": 60,
+          "note": "层级塔自沙面升起 —— TBD"
+        },
+        {
+          "role": "tomb_mark",
+          "x": 50,
+          "y": 62,
+          "at": 250,
+          "note": "球与外切圆柱刻印（QC 专项：必须是球+外切圆柱，不得画成其他图形）—— TBD"
+        },
+        {
+          "role": "spark",
+          "x": 50,
+          "y": 62,
+          "at": 280,
+          "note": "墓刻圆心一点珊瑚红"
+        }
+      ],
+      "graphics": "sand-gather + layered-tower-grow + sphere-cylinder-outline",
+      "fact_refs": [
+        "archimedes-psammites"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "dusk-strings"
+    },
+    {
+      "id": "S04",
+      "era": "628",
+      "stamp_en": "628",
+      "stamp_cn": "比尔马尔 · 空位上的点",
+      "mode": "dark",
+      "dur_sec": 12,
+      "dur_frame": 360,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "公元六二八年，\"没有\"，第一次有了名字。",
+          "en": "In 628, \"nothing\" was given a name.",
+          "in_frac": 0.15,
+          "out_frac": 0.52
+        },
+        {
+          "n": 2,
+          "cn": "他连零除以零都敢算——虽然，他算错了。",
+          "en": "He even tried 0 ÷ 0 — and got it wrong.",
+          "in_frac": 0.55,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "image",
+        "src": "assets/S04.png",
+        "scale": [
+          1,
+          1.04
+        ],
+        "origin": "62% 48%",
+        "prompt": "Five shallow wooden trays in a row on a dark table under one low overhead lamp. The four trays at the left are filled level with fine pale sand: individual grains, a few raked ridges and small hollows clearly readable on each surface, matte and powdery. The fifth tray at the right is completely empty, showing bare scratched dry wood. All surfaces are diffuse and non-luminous, lit only by the lamp, never self-emitting. Deep neutral shadow closes in around the row. Photoreal still-life, macro lens, shallow focus.",
+        "negative": "★空槽必须真空：圆点由代码画（它是全片 ✳ 的祖先，QC 专项核对位置在最右空槽）",
+        "roll": "r2",
+        "prompt_note": "选用 r3（四槽有砂+最右空槽最清晰）",
+        "style": "darkCool",
+        "prompt_v1_rejected": "暖橙调、四槽读作自发光白板，沙粒信息丢失（2026-09-27 双审一致判重抽）",
+        "negative_note": " no glowing panels, no luminous or backlit surfaces, no smooth white boards, no living creature, no human hands, no printed characters anywhere in frame.",
+        "chosen": "2026-09-27 双审重抽：五槽前视、四槽有沙、最右空槽裸露木纹、冷调"
+      },
+      "anchors": [
+        {
+          "role": "empty_slot",
+          "x": 61,
+          "y": 47,
+          "at": 90,
+          "note": "最右空槽中心，2026-09-27 按 r2 底图目视标定（网格读数）"
+        },
+        {
+          "role": "hand",
+          "x": 78,
+          "y": 28,
+          "at": 60,
+          "note": "r2 底图内无人无手，此锚点作废"
+        }
+      ],
+      "graphics": "dot-place + ripple",
+      "fact_refs": [
+        "brahmagupta-zero-628"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "single-note",
+      "qc_special": "圆点必须落在最右空槽上，且是全场唯一暖色"
+    },
+    {
+      "id": "S05",
+      "era": "1844",
+      "stamp_en": "1844",
+      "stamp_cn": "华盛顿 — 巴尔的摩",
+      "mode": "dark",
+      "dur_sec": 14,
+      "dur_frame": 420,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "滴，答。话语跑得比马快，靠的是电。",
+          "en": "Words outran horses — on electricity.",
+          "in_frac": 0.15,
+          "out_frac": 0.5405,
+          "cn_old": "滴，答。话语第一次送得比马快。",
+          "en_old": "Dot, dash. For the first time, words outran the horse.",
+          "fact_note": "原句「第一次送得比马快」事实错：Chappe 光学电报 1791–94 已经比马快（historyofinformation id=429），1837/1839 Cooke-Wheatstone 有线电报也早于 1844。1844 只承重\"美国首条长途线\"。去掉\"第一次\"，把落点改成\"电\"这个介质。"
+        },
+        {
+          "n": 2,
+          "cn": "只用一短一长，就说尽了人间的名字。",
+          "en": "Short and long, and every name could be said.",
+          "in_frac": 0.5548,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "image",
+        "src": "assets/S05.png",
+        "scale": [
+          1,
+          1.05
+        ],
+        "origin": "40% 50%",
+        "prompt": "Extreme close-up of an antique brass telegraph key standing on a bare dark wooden desk. A heavy brass lever with a black ebonite knob, a spring, a binding post and one coiled copper wire, tarnish and fingerprints on the metal. Nothing else on the desk surface. A single low warm lamp outside the frame at the left rakes across the brass and falls off quickly into deep shadow; a rain-blurred window and telegraph poles far behind, out of focus. Photoreal, 35mm film still, macro depth of field.",
+        "negative": "★纸带必须空白：点划由代码绘制并逐渐加密",
+        "roll": "r2",
+        "prompt_v1_rejected": "电键形状不可辨认；旁边卡片印着乱码伪文字（模型幻觉字）",
+        "negative_note": " no paper, no card, no label, no plaque, no writing, no printed characters, no readable document, no human hands, no face.",
+        "chosen": "2026-09-27 双审重抽：黄铜电键可辨、画面内无纸无字、台灯在画左"
+      },
+      "anchors": [
+        {
+          "role": "spark",
+          "x": 55,
+          "y": 44,
+          "at": 40,
+          "note": "电键触点，2026-09-27 按 r2 标定"
+        },
+        {
+          "role": "tape",
+          "x": 26,
+          "y": 12,
+          "at": 70,
+          "note": "点划线起点，挪到上方暗带避开台灯"
+        }
+      ],
+      "graphics": "dot-dash-layer",
+      "fact_refs": [
+        "telegraph-1844"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "key-taps",
+      "video_candidate": true,
+      "video_note": "电线掠过的长镜头"
+    },
+    {
+      "id": "S06",
+      "era": "1948",
+      "stamp_en": "1948",
+      "stamp_cn": "贝尔实验室 · 新泽西",
+      "mode": "paper",
+      "dur_sec": 12,
+      "dur_frame": 360,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "香农给万物找到了同一把尺子：比特。",
+          "en": "Shannon found one ruler for everything: the bit.",
+          "in_frac": 0.22,
+          "out_frac": 0.58
+        },
+        {
+          "n": 2,
+          "cn": "从此，声音有了重量，图像有了长短。",
+          "en": "Sound gained weight; images gained length.",
+          "in_frac": 0.62,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "none",
+        "src": null,
+        "note": "★零素材场：宣纸底与全部图形由代码绘制，不生成任何图片"
+      },
+      "anchors": [
+        {
+          "role": "glyph0",
+          "x": 39,
+          "y": 52
+        },
+        {
+          "role": "glyph1",
+          "x": 61,
+          "y": 52
+        },
+        {
+          "role": "spark",
+          "x": 50,
+          "y": 40,
+          "at": 250,
+          "note": "✳ 压在 0/1 之间桥线的中点，at=8 帧"
+        }
+      ],
+      "graphics": "0/1 二象收拢 + 桥线 + 一颗珊瑚比特来回 + 逐格比特条 A=1000001 + 前后两层数字雨",
+      "fact_refs": [
+        "shannon-1948"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "paper-shift",
+      "status": "已实现并渲染通过（05_render/src/scenes/S06.tsx，420 帧 / 50.8s）",
+      "dur_note": "2026-09-27 方案§3 时长再分配：0/1 二象 12s 足够，14→12s"
+    },
+    {
+      "id": "S07",
+      "era": "1950 · 1956",
+      "stamp_en": "1950 · 1956",
+      "stamp_cn": "曼彻斯特 · 达特茅斯",
+      "mode": "dark",
+      "dur_sec": 14,
+      "dur_frame": 420,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "一九五〇年，一篇论文的第一句，是一个问题：",
+          "en": "In 1950, a paper opened with a question:",
+          "in_frac": 0.15,
+          "out_frac": 0.5
+        },
+        {
+          "n": 2,
+          "cn": "机器能思考吗？六年后，它有了名字：人工智能。",
+          "en": "Can machines think? Six years later, it had a name: Artificial Intelligence.",
+          "in_frac": 0.53,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "image",
+        "src": "assets/S07.png",
+        "scale": [
+          1,
+          1.05
+        ],
+        "origin": "50% 55%",
+        "prompt": "Dark moody photoreal still life: a black 1950s typewriter centred slightly below the middle of the frame, a cone of hard light from an industrial desk lamp at the upper right, dust and smoke particles floating in the beam. A clean empty sheet of plain white paper is rolled in, carrying no printing and no marks of any kind. Deep amber and near-black palette, heavy film grain, strong vignette, cinematic low-key lighting, no people.",
+        "negative": "★纸面必须空白：Can machines think? 由代码叠加（原片该场文字不跟纸面透视走，我们沿用同一做法）",
+        "roll": "r1"
+      },
+      "anchors": [
+        {
+          "role": "paper_line1",
+          "x": 50,
+          "y": 40,
+          "at": 60,
+          "note": "打字机字体行 1 —— TBD 需对齐纸面倾角"
+        },
+        {
+          "role": "paper_line2",
+          "x": 50,
+          "y": 48,
+          "at": 250
+        }
+      ],
+      "graphics": "typewriter-text",
+      "fact_refs": [
+        "turing-1950",
+        "dartmouth-1956"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "type-perc",
+      "qc_note": "\"六年\"口径：Dartmouth 提案文本首用 Artificial Intelligence 是 1955（McCarthy 本人页），会议在 1956 → 按提案为五年、按命名为六年。字幕取\"六年\"，QC 表要注这一行。"
+    },
+    {
+      "id": "S08",
+      "era": "1966",
+      "stamp_en": "1966",
+      "stamp_cn": "坎布里奇 · 荧光屏",
+      "mode": "dark",
+      "dur_sec": 14,
+      "dur_frame": 420,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "三千年来，第一次，人工智能接了这个问题。",
+          "en": "For the first time in three thousand years, AI caught the question.",
+          "in_frac": 0.15,
+          "out_frac": 0.5
+        },
+        {
+          "n": 2,
+          "cn": "有人开始对它说，只肯对它说的话。",
+          "en": "Some began telling it what they told no one else.",
+          "in_frac": 0.53,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "image",
+        "src": "assets/S08.png",
+        "scale": [
+          1,
+          1.05
+        ],
+        "origin": "50% 50%",
+        "prompt": "1966 computer laboratory, photoreal film still: a small oscilloscope-terminal monitor sitting LOW in the frame, its glass curved and its screen a deep muted green glow with clearly visible horizontal scanlines and soft uneven phosphor falloff, lighting only the desk immediately in front of it. Most of the frame is a dark room: cables, a rack of equipment in shadow, and the back of a seated person in silhouette at the left. Cold green and deep blue-black palette, no warm light, shallow depth of field, heavy 35mm film grain.",
+        "negative": "★屏幕必须小而暗、有扫描线纹理，不许是一整块高饱和纯色矩形",
+        "roll": "r4",
+        "prompt_note": "选用 r1；三抽均有额外暖色，r1 最少。QC 若判暖色超标则动用应急余量再抽",
+        "prompt_v1_rejected": "用户 2026-09-27 点名\"绿色机器观感很不好，而且和上一幕有点重复\"：整块荧光绿矩形占满画面、纯色无层次，背后一盏橙色顶灯与绿打架，既违反\"深蓝黑+琥珀+唯一珊瑚\"的调色纪律，也把代码字幕的对比度吃掉了。",
+        "style": "darkCool",
+        "negative_note": " no warm orange light, no bright flat single-colour screen, no readable characters, no letters, no text, no faces, no watermark.",
+        "cand_note": "r5 屏幕有波形但左上背景坐了第二个人、构图抢戏；r6 屏幕仍在右缘且偏亮(mean 14.9)。取 r4：绿屏只占 1.33%（旧图是一整块高饱和矩形）、居中 x46.5-54.8%/y45-64.9%、左上 x4-34%/y16-46% 实测均值 5.3 = 全图最暗，正好放对话。桌面那摊暖光保留——它是本片调色纪律里的琥珀中间调，旧图的问题从来不是\"有暖色\"，而是绿块太大太纯。"
+      },
+      "anchors": [
+        {
+          "role": "screen",
+          "x": 50.6,
+          "y": 54.6,
+          "at": 0,
+          "note": "实测绿屏 bbox x46.5-54.8% / y45-64.9%"
+        },
+        {
+          "role": "dialog",
+          "x": 5,
+          "y": 17,
+          "at": 46,
+          "note": "对话列：左上近黑区（实测均值 5.3 / p95 12.2），最长行 37 字符 ≈ 收到 41%，不压屏幕"
+        }
+      ],
+      "graphics": "ELIZA 对话逐字打出 + 行末珊瑚呼吸光标",
+      "fact_refs": [
+        "eliza-1966"
+      ],
+      "rhetoric_flag": true,
+      "music_cue": "hum",
+      "qc_special": "对话行末光标=✳母题位置；不得出现雪景；不得出现主机型号字样",
+      "rhetoric_note": "卜辞下限到 1966 实为 3015–3265 年，\"三千年\"是向下取整的修辞；\"人工智能接了这个问题\"是叙事演绎，实证锚只有 ELIZA 有人向它倾诉（科普中国）。按纪律标 true。"
+    },
+    {
+      "id": "S09",
+      "era": "1997",
+      "stamp_en": "1997",
+      "stamp_cn": "纽约 · 世纪之战",
+      "mode": "dark",
+      "dur_sec": 11,
+      "dur_frame": 330,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "六十四格里，机器找到了回答。",
+          "en": "Across sixty-four squares, the machine found an answer.",
+          "in_frac": 0.15,
+          "out_frac": 0.52
+        },
+        {
+          "n": 2,
+          "cn": "决胜局第十九步，世界冠军停了钟。",
+          "en": "Game six, move nineteen: the champion stopped the clock.",
+          "in_frac": 0.55,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "image",
+        "staff_note": "★差异化红线：冷色竞技厅 + 机器扫描光。不得是暖色木纹 + 樱花（那是原片 AlphaGo，撞车即打回）",
+        "src": "assets/S09.png",
+        "scale": [
+          1,
+          1.05
+        ],
+        "origin": "50% 70%",
+        "prompt": "Dark tournament hall, cinematic: an oversized chessboard paving the lower half of the frame in strong one-point perspective, squares like stone slabs receding to a vanishing point slightly above centre. Cool blue-grey lighting, steel and glass mood, a row of scanning light cells deep between the squares (machine thinking), no warm wood tones, no flowers, no petals. A single seated human silhouette seen from behind at about 20% width, no face. One white piece standing on a square in the right foreground. Cold palette, film grain, vignette. No text, no letters, no numbers, no watermark.",
+        "negative": "禁：木纹 / 樱花 / 暖色 / 正脸",
+        "roll": "r1"
+      },
+      "anchors": [
+        {
+          "role": "landing_square",
+          "x": 60,
+          "y": 55,
+          "at": 150,
+          "note": "落子定格 + 珊瑚涟漪 —— TBD"
+        }
+      ],
+      "graphics": "scan-light-advance + ripple",
+      "fact_refs": [
+        "deepblue-1997"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "clock-stop",
+      "qc_special": "冷色判定：若画面主色温偏暖即打回",
+      "dur_note": "2026-09-27 方案§3 时长再分配：绿色机器场 13→11s，省下的给结尾"
+    },
+    {
+      "id": "S10",
+      "era": "2017",
+      "stamp_en": "2017",
+      "stamp_cn": "Transformer",
+      "mode": "dark",
+      "dur_sec": 12,
+      "dur_frame": 360,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "每个词都是一颗星，词与词之间，连出了星座。",
+          "en": "Every word a star; between them, constellations.",
+          "in_frac": 0.0833,
+          "out_frac": 0.4778
+        },
+        {
+          "n": 2,
+          "cn": "那年，一篇论文的标题说：注意力就是一切。",
+          "en": "Attention is all you need.",
+          "in_frac": 0.4944,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "none",
+        "src": null,
+        "note": "★零素材场：词星、注意力连线、论文题名全代码绘制"
+      },
+      "anchors": [
+        {
+          "role": "word_band",
+          "x": 50,
+          "y": 40
+        },
+        {
+          "role": "paper_title",
+          "x": 50,
+          "y": 65,
+          "at": 210
+        },
+        {
+          "role": "spark",
+          "x": 50,
+          "y": 40,
+          "at": 170
+        }
+      ],
+      "graphics": "word-stars + weighted-attention-arcs + title",
+      "fact_refs": [
+        "transformer-2017"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "shimmer",
+      "qc_special": "题名逐字核对 Attention Is All You Need；下缘小灰字 Vaswani et al. · 2017"
+    },
+    {
+      "id": "S11",
+      "era": "NOW",
+      "stamp_en": "NOW",
+      "stamp_cn": "两种未来",
+      "mode": "dark",
+      "dur_sec": 18,
+      "dur_frame": 540,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "有人说，人类是硅基智能的生物引导程序。",
+          "en": "Some say we are the biological bootloader of silicon intelligence.",
+          "in_frac": 0.14,
+          "out_frac": 0.52,
+          "cn_old": "有人说，人类是硅基文明的引导程序。",
+          "en_old": "Some say we are the bootloader of silicon civilization.",
+          "fact_note": "马斯克原话对象是 digital superintelligence 的 \"biological bootloader\"，facts 也锁的是\"硅基智能的生物引导程序\"。v2.4 手写版丢了\"生物\"、把\"智能\"抬成\"文明\"，回到 facts 口径。"
+        },
+        {
+          "n": 2,
+          "cn": "也有人说，预测下一个词，需要的正是智慧。",
+          "en": "To predict the next token well is to understand.",
+          "in_frac": 0.55,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "none",
+        "src": null,
+        "note": "★零素材场：光标→文字流→星点→星河 四段式生长，全代码"
+      },
+      "anchors": [
+        {
+          "role": "cursor",
+          "x": 25,
+          "y": 70,
+          "at": 10
+        },
+        {
+          "role": "galaxy_core",
+          "x": 50,
+          "y": 50,
+          "at": 280,
+          "note": "✳ 代码里就放在画面中心 (CX,CY)，螺旋质心实测 49/53 ≈ 中心"
+        }
+      ],
+      "graphics": "cursor-blink + text-flow + disperse-to-stars + spiral-galaxy + spark",
+      "fact_refs": [
+        "musk-bootloader-2026",
+        "sutskever-nexttoken-2023"
+      ],
+      "rhetoric_flag": true,
+      "music_cue": "swell",
+      "qc_special": "不得出现任何价格数字或品牌名"
+    },
+    {
+      "id": "S12",
+      "era": "—",
+      "stamp_en": "A Genealogy",
+      "stamp_cn": "家谱",
+      "mode": "paper",
+      "dur_sec": 18,
+      "dur_frame": 540,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "把四万年的线索，重新画成一棵树：",
+          "en": "Four hundred centuries, redrawn as one tree:",
+          "in_frac": 0.12,
+          "out_frac": 0.42
+        },
+        {
+          "n": 2,
+          "cn": "有人猜它五年内开，有人说还要等二十年。",
+          "en": "Some guess five years; some say twenty more.",
+          "in_frac": 0.52,
+          "out_frac": 0.95
+        }
+      ],
+      "plate": {
+        "kind": "image",
+        "src": "assets/S12.png",
+        "scale": [
+          1,
+          1.03
+        ],
+        "origin": "50% 60%",
+        "prompt": "Traditional Chinese ink-wash on aged warm rice paper, vertical composition: a single strong black ink-brush trunk enters from the TOP edge of the frame and descends straight down the centre, passing through a faint horizontal ink ground line at about 45% height; below that line its roots spread downward and outward in a fan of dry-brush ink strokes, occupying the lower 55%. Above the ground line the trunk continues with small coral-red plum blossoms at a few side branch tips. Vast empty warm off-white paper. No labels, no writing anywhere, and no red seal stamp and no chop mark on the paper. Subtle paper fibre texture, restrained Song dynasty aesthetic, black ink with vermilion accents only. No text, no watermark.",
+        "negative": "★倒置树（干上根下），对齐原片实测；不得有文字印章——「问」章与竖排题字由代码画",
+        "roll": "r1"
+      },
+      "anchors": [
+        {
+          "role": "root_labels",
+          "n": 10,
+          "at": "逐个 60→330，间隔 30",
+          "note": "★10 个根标签坐标必须逐一目视标定到真实根分叉上，禁止猜",
+          "labels": [
+            "仰望 40000 BCE",
+            "甲骨 1300 BCE",
+            "数沙者 212 BCE",
+            "零 628",
+            "电报 1844",
+            "香农 1948",
+            "图灵 1950",
+            "ELIZA 1966",
+            "深蓝 1997",
+            "Transformer 2017"
+          ]
+        },
+        {
+          "role": "seal_wen",
+          "x": 42,
+          "y": 41,
+          "at": 360,
+          "note": "主干旁朱章「问」—— TBD"
+        },
+        {
+          "role": "vertical_title",
+          "x": 90,
+          "y": 14,
+          "at": 40,
+          "note": "右上竖排「下一个问题」+ 朱框「问」章"
+        },
+        {
+          "role": "year_nodes",
+          "x": "50→62 等距",
+          "y": "38→26",
+          "at": 380,
+          "note": "2018/2020/2022/2024/2025 逐朵绽放，无任何品牌名"
+        },
+        {
+          "role": "bud",
+          "x": 25,
+          "y": 8,
+          "at": 470,
+          "note": "树梢墨迹实测 x≈25%/y≈5%，花苞放右上 25%/8%"
+        }
+      ],
+      "graphics": "22 节点墨点时间轴(22帧/拍弹入+涟漪) + 右上呼吸花苞 + 朱章",
+      "fact_refs": [
+        "agi-timelines-2025"
+      ],
+      "rhetoric_flag": false,
+      "music_cue": "climax-strings",
+      "qc_veto": true,
+      "qc_special": "10 个根标签逐字对齐剧本；竖排题字=下一个问题；主干年份 2018–2025 无品牌名"
+    },
+    {
+      "id": "S13",
+      "era": "C. 40,000 BCE — NOW",
+      "stamp_en": "",
+      "stamp_cn": "",
+      "mode": "dark",
+      "dur_sec": 18,
+      "dur_frame": 540,
+      "captions": [
+        {
+          "n": 1,
+          "cn": "星空变成了屏幕，问题从未停止。",
+          "en": "The sky became a screen; the questions never stopped.",
+          "in_frac": 0.14,
+          "out_frac": 0.36,
+          "frac_note": "原 0.48 会跨过 a→b 的黑位切点(210f)，第一条字幕压在两半之间；收到 0.36=f194，切之前收干净。"
+        },
+        {
+          "n": 2,
+          "cn": "四万年后，按下手印的，是你。",
+          "en": "Four hundred centuries on, the next hand is yours.",
+          "in_frac": 0.565,
+          "out_frac": 0.88,
+          "frac_note": "0.565=f305，正好压在\"手形阴影落下去\"那一下；0.88=f475 收，留 65 帧(2.2s)干净落版给音乐收尾。"
+        }
+      ],
+      "plate": {
+        "kind": "image",
+        "src": "assets/S13a.png",
+        "alt_src": "assets/S13b.png",
+        "alt_note": "落版第二张：星空岩壁。一场两张图，S13.tsx 用 variant=\"b\" 取。",
+        "scale": [
+          1,
+          1.04
+        ],
+        "origin": "40% 46%",
+        "prompt": "Night interior, photoreal: a rain-streaked window with blurred city lights outside, a wooden desk, an open laptop as the only light source. Its screen glows warm amber, filled with faint out-of-focus horizontal bands of light like text far too blurred to read, and a soft bloom spills onto the desk and the papers beside it. Deep teal shadows, shallow depth of field, heavy 35mm film grain, cinematic low-key but generously exposed so the screen has visible gradient and structure.",
+        "negative": "★屏幕上只许有糊掉的光带，不许有任何可读字符；✳ 与光标由代码叠加",
+        "prompt_v1_rejected": "屏幕是纯色橙方块、无内容无层次（审片汇总 §S13）；✳ 落在上面读不出来",
+        "negative_note": " no readable characters, no letters, no digits, no logo, no faces, no people, no text, no watermark.",
+        "cand_note": "v2 三抽(r4-r6)全部不采纳：r6 画出了人（禁令违反）；r5 屏幕跑到 x68-90% 且多一盏台灯=第二个光源；r4 屏幕纹理最好但右侧有红色霓虹招牌，违反全片暖色纪律。 决定：留 r1 那块纯色琥珀屏 —— 它本来就是给代码层留的底，\"无内容无扫描线\"的正解是在代码层画扫描线/明暗/光标余辉（三层混合架构的本职），不是让模型去画假 UI。锚点也不必重标。"
+      },
+      "plate_b": {
+        "kind": "image",
+        "src": "assets/S13b.png",
+        "scale": [
+          1,
+          1.04
+        ],
+        "origin": "60% 50%",
+        "style": "darkBright",
+        "prompt": "Cave interior at night, photoreal: a dark rock overhang across the very top, and above the cave mouth a brilliant star-filled night sky with a luminous Milky Way. Below it a slanting sandstone wall covered with layered prehistoric rock art — dozens of red-ochre handprints of many sizes and ages, overlapping, some faded, plus painted deer and bison silhouettes in dark ochre red. A small campfire burns low at the right, raking warm amber light across the painted wall so the handprints glow. Generously exposed, the whole wall clearly legible, darkness only at the frame edges. Heavy 35mm film grain.",
+        "negative": "★手印是这场的主角，r1 完全没有手印；左 1/3 保持较暗较空的岩面给落版文字",
+        "negative_note": " no people, no faces, no modern objects, no blue daylight sky, no text, no watermark.",
+        "prompt_v1_rejected": "r1 无手印（用户目视打回）；r3 有手印但 mean 16.2 太暗、洞口天空是白天的蓝。v2 改要 darkBright 曝光 + 星空 + 手印铺满",
+        "roll": "r5",
+        "cand_note": "r4 前景 40% 是死黑地面；r6 太暗(>60 仅 3.1%)；r5 手印+动物画最清楚、星空最亮、mean 22.4"
+      },
+      "split_at_frame": 210,
+      "anchors": [
+        {
+          "role": "cursor",
+          "x": 40,
+          "y": 58,
+          "at": 20,
+          "note": "上半：琥珀屏幕内（屏占 x34-67% / y53-78%）"
+        },
+        {
+          "role": "spark_screen",
+          "x": 50,
+          "y": 64,
+          "at": 60,
+          "note": "上半：✳ 在屏幕中央"
+        },
+        {
+          "role": "endcard",
+          "x": 12,
+          "y": 46,
+          "at": 250,
+          "note": "下半：左 1/3 暗岩，实测均值 17.5 / p90 35.4，够压住纸色字"
+        },
+        {
+          "role": "spark_rock",
+          "x": 72,
+          "y": 60,
+          "at": 240,
+          "note": "下半：右中岩壁，实测均值 24.7 / 手印占比 48.5%，离火堆(52.7%/88.9%)够远"
+        },
+        {
+          "role": "hand_palm",
+          "x": 33.3,
+          "y": 66.6,
+          "at": 292,
+          "note": "子 agent 实测：spark_rock(72/60) 落在模糊暗斑上显不出手；五指齐全的那块手印在 x31.8–35.3 / y63.5–70，圆心取 33.3/66.6"
+        }
+      ],
+      "graphics": "cursor-blink + endcard + handprint-press(阴影→径向显影→✳)",
+      "fact_refs": [],
+      "rhetoric_flag": false,
+      "music_cue": "resolve",
+      "qc_veto": true,
+      "endcard": {
+        "main": "✳ 你的下一个问题。",
+        "sub": "Your next question.",
+        "compliance": null,
+        "compliance_size_ratio": 0.014,
+        "compliance_note": "2026-09-27 用户决定：片内与平台的 AI 生成说明全部删除，责任由本人承担。"
+      },
+      "dur_note": "2026-09-27 方案§3 时长再分配：结尾要装手印按压+落版停留，14→18s",
+      "split_note": "18s 版：笔记本半段保持 210f，多出的 120f 全给岩壁半段（手印按压 + 落版停留）。",
+      "screen_rect_note": "上半场扫描线/光标用的 screen_rect 锚点等 S13a 重抽定稿后再加；当前代码回退值 x34/y53.8/w30.7/h35.6 是从旧图量的。"
+    }
+  ],
+  "output": {
+    "subtitle_style": "bilingual-serif",
+    "grain": true,
+    "vignette": true,
+    "assembly": "每场独立 Composition → tools/assemble.mjs concat demuxer",
+    "audio": "旁白+BGM+音效先 ffmpeg 预混成单条 mix.wav（−16 LUFS / TP −1.5 dBTP），Remotion 只挂一个 <Audio>"
+  },
+  "asset_budget": {
+    "images_needed": 10,
+    "image_scenes": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S07",
+      "S08",
+      "S09",
+      "S12",
+      "S13a",
+      "S13b"
+    ],
+    "note": "S13 需两张（上半书桌 + 下半岩壁），故实际 11 张底图；零素材场 S06/S10/S11 不出图",
+    "rolls_per_scene": 3,
+    "projected_cost_cny": 0.83,
+    "cap_cny": 1.5,
+    "video_slots": [
+      "S01",
+      "S05"
+    ],
+    "video_cap_cny": 14
+  }
+}
