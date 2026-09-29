@@ -1,0 +1,259 @@
+{
+  "_meta": {
+    "项目": "《下一个问题》(Your Next Question) ep01 史实库",
+    "对应剧本": "02_script/ep01-script.md v2.2 冻结版",
+    "任务书": "任务书-分工与交接.md v2.2 · 任务书B",
+    "完成情况": "14/14 完成",
+    "执行": "GLM-5.3-Flash · 2026-09-26",
+    "核源纪律": "所有出处URL均为本任务回合真实抓取的页面（webReader抓取 / 本机curl下载后文本抽取 / arXiv API），数字均带单位与统计口径；未核到的一律降级并写明",
+    "待定项清单": [
+      "① eliza-1966 运行主机：结论=IBM 7090（科普中国正文+DBpedia computingPlatform 双源一致）；7094 异说仅见于 DBpedia 无关链接包，无实抓源作为平台断言支持；一手论文 CACM 10.1145/365153.365168 被反爬 403、多个镜像 404 未能直核 → 型号细项证据等级标'通说'，建议维持剧本'画面不写型号'做法（K3 拍板项 2 对应此条）",
+      "② sutskever-nexttoken-2023：观点确证（实抓全文命中中文转译）；英文逐字原句与'2023.3'的月份未能核到一手英文页 → 两细项标'存疑'，建议下游引用用'2023 年多次公开表述'",
+      "③ agi-timelines-2025 中 Hassabis 2025.4 CBS 专访原页未直抓（CBS 反爬），'5–10 年'口径由实抓的伦敦媒体简报会报道（未央网）与 2026.1 表态（IT之家）承重，两者与任务书口径一致",
+      "④ 网络受限说明：en.wikipedia、Britannica(WEB直抓)、ACM、LOC、dbpedia REST 摘要接口均反爬/间歇不可用；已用 MacTutor、arXiv/API、IBM 官史、DBpedia 结构化数据、新华社/科学网/科普中国/澎湃等中文权威源替位"
+    ]
+  },
+  "facts": [
+    {
+      "id": "paleolithic-stargazing-40000bce",
+      "断言": "旧石器时代晚期（约4万年前）人类已具备象征与观察能力；实证锚=同期洞穴艺术——约4万年前欧亚两端均有手印/壁画（2014《自然》：苏拉威西手模≥39,900年，'人类在大约4万年前在更新世欧亚世界的两端都在产生具象化的艺术'）",
+      "年份": "约40000 BCE（实证锚实测区间：39,900–67,800 年前）",
+      "出处URL": [
+        {
+          "url": "https://news.sciencenet.cn/htmlpaper/2014101511172615834692.shtm",
+          "实抓要点": "科学网转《自然》2014-10 报道（Aubert 等，铀系测年）：'最古老的苏拉威西岛图像至少有39900年，是已知世界上最古老的手印'；'人类在大约4万年前在更新世欧亚世界的两端都在产生具象化的艺术'"
+        },
+        {
+          "url": "https://english.news.cn/20260122/93134f7e39e84aa6a0c2cea789e55d9e/c.html",
+          "实抓要点": "新华社英文电 2026-01-22（Nature 同步）：苏拉威西 Muna 岛 Liang Metanduno 洞手模≥67,800 年（铀系测年），刷新已知最古老洞穴艺术纪录；手模指线经人为收窄，'possibly reflecting symbolic or cultural meaning'"
+        },
+        {
+          "url": "https://www.britannica.com/place/Lascaux",
+          "实抓要点": "Britannica 拉斯科条目：炭样碳测约 17,000 年——校准用（证明'拉斯科≈4万年'为误，本片 4 万年锚不在拉斯科）"
+        }
+      ],
+      "证据等级": "确证（实证锚）；'第一次仰望/第一块屏幕'为修辞演绎",
+      "rhetoric": true,
+      "备注": "演绎与实证锚严格分开：'第一次抬头看了很久'无人能证，facts 只承重'约4万年前人类已有象征行为'。⚠️ 年代校准三档：2014 手模≥39,900 年（当时纪录）→ 2026-01 同岛刷新至 ≥67,800 年 → 拉斯科≈17,000 年（不同期、勿混同）。S01/S13 全片任何文案禁用'最古老'表述（纪录 2026 年已改写）；'约四万年前'本身仍真。"
+    },
+    {
+      "id": "oracle-bones-1300bce",
+      "断言": "殷商甲骨占卜（约前14–前11世纪）：灼烧龟甲兽骨、以裂纹'兆'定吉凶、刻辞存档",
+      "年份": "约1300 BCE（商晚期）",
+      "出处URL": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Oracle_bone",
+          "实抓要点": "全文抓取：商晚期（约前1250–前1050，武丁起）王室以灼烧（pyromancy）使甲骨开裂、依'卜'形裂纹判读吉凶、并刻记占卜内容存档"
+        },
+        {
+          "url": "https://www.britannica.com/topic/oracle-bone",
+          "实抓要点": "Britannica：卜辞属商最后九王（传统纪年 1324–1122 BC）时期"
+        }
+      ],
+      "证据等级": "确证",
+      "rhetoric": false,
+      "备注": "剧本字幕'人们相信，那是回答'为史实性转述——'信'是当时行为本身的一部分，无需演绎标注。两源纪年口径略异（前1250–前1050 vs 传统 1324–1122 BC），剧本年代戳'约前1300'为安全取整，两说均覆盖，无需改。"
+    },
+    {
+      "id": "archimedes-psammites",
+      "断言": "阿基米德《数沙者》(The Sand Reckoner) 构造了一套可表达到 8×10^63 的记数法，为回答'填满宇宙需要多少粒沙'；为此给出宇宙尺度，并转述阿里斯塔克斯日心说（该学说几乎失传的关键史料）；球面积=大圆4倍、球体积=外切圆柱2/3 为他要求刻上墓碑的图形；西塞罗记前75年在叙拉古亲见此墓",
+      "年份": "约前3世纪（原著）；前75年（西塞罗寻墓）",
+      "出处URL": [
+        {
+          "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/",
+          "实抓要点": "MacTutor 原文命中四点：'capable of expressing numbers up to 8×10^63 in modern notation'；'He argues in this work that this number is large enough to count the number of grains of sand which could be fitted into the universe'；'Aristarchus has proposed a system with the sun at the centre and the planets, including the Earth, revolving round it'；'asked for a representation of this...to be inscribed on his tomb'＋西塞罗（前75年，任西西里财务官）'I noticed a small column arising a little above the bushes, on which there was a figure of a sphere and a cylinder'"
+        }
+      ],
+      "证据等级": "确证",
+      "rhetoric": false,
+      "备注": "8×10^63 为 MacTutor 给出的现代记号改写；剧本字幕2'八乘十的六十三次方'与其逐字一致。西塞罗记载出自《图斯库兰论辩》卷五（MacTutor 转引），为一手文献承重——S03 QC 专项（墓刻=球与外切圆柱）据此通过。'数沙者'成书年份学界未单列（一般定于叙拉古晚期），剧本年代戳'III CENTURY BCE'指其生平世纪，安全。"
+    },
+    {
+      "id": "brahmagupta-zero-628",
+      "断言": "628 年婆罗摩笈多《婆罗摩历算书》(Brāhmasphuṭasiddhānta，25章，写于 Bhillamala/今 Bhinmal) 首次把零作为数给出运算规则（一数减自身为零、n×0=0、零加减正负数法则）；并给出 0÷0=0 的错误规则——0÷0 实为不定，后世印度数学家逐步修正",
+      "年份": "628",
+      "出处URL": [
+        {
+          "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Brahmagupta/",
+          "实抓要点": "MacTutor：'he defined zero as the result of subtracting a number from itself'；'a number multiplied by zero becomes zero'；'Zero divided by zero is zero'——'He is certainly wrong when he then claims that zero divided by zero is zero'，同时称这是把算术推广到零与负数的一次'brilliant attempt'；成书 628 年共 25 章、写于 Bhillamala"
+        },
+        {
+          "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Zero/",
+          "实抓要点": "MacTutor Zero 专页：'by around 650AD the use of zero as a number came into Indian mathematics'；逐条引婆罗摩笈多规则并评'n/0 处 he is struggling'、0÷0=0 'certainty wrong'；'zero'一词源自阿拉伯语 sifr（也给了 cipher）；公认最早的带零纪年=876 年 Gwalior 铭文（270 与 50 的写法'almost as they appear today'）"
+        }
+      ],
+      "证据等级": "确证",
+      "rhetoric": false,
+      "备注": "剧本字幕2'他连零除以零都敢算——虽然，他算错了'与两页原文逐点吻合（'敢算'=brilliant attempt，'算错'=certainly wrong）。⚠️ śūnya 子表述：'零的概念根植于印度空（śūnya）哲学'为学界通说，但本回合实抓两页均未直书 śūnya 一词（Zero 专页用以指零位的是 kha/'空位'）——该子项列'通说'，建议画面/旁白不硬引梵文词，用'空'概念表述即可。'zero←sifr'词源链 MacTutor 只核到阿拉伯语层，zephirum 中间环节未在实抓页出现，勿用于成片。"
+    },
+    {
+      "id": "telegraph-1844",
+      "断言": "1844-05-24 摩尔斯自华盛顿国会大厦经有线电报线发报至巴尔的摩——美国首条长途电报线；首条电文 'What hath God wrought'（本片刻意不引用）",
+      "年份": "1844-05-24",
+      "出处URL": [
+        {
+          "url": "https://www.huxiu.com/article/443056.html",
+          "实抓要点": "虎嗅转集智俱乐部（陈关荣）：'1844年5月24日，一位53岁的职业画家用他亲手制作的简易电报机发出了人类历史上第一条电报：What hath God wrought!'；'电文是从美国华盛顿国会大厦通过有线电缆发到巴尔的摩市的'；发报人莫尔斯（1791–1872）、收报人助手维尔（Alfred Vail）；并注明电文语出《民数记》(Book of Numbers)"
+        }
+      ],
+      "证据等级": "确证（但\"人类历史上第一条长途电报\"这一说法不成立，见校注）",
+      "rhetoric": false,
+      "备注": "剧本 v2.2 注已声明不引用电文原文（避宗教表达）——facts 同口径，画面/QC 均不应出现该电文。线路长度（约 60 公里/41 英里）未在实抓页命中，本条目不背书，storyboard 如需长度数字须另行补源。",
+      "校注": "2026-09-27 事实核验：Chappe 光学电报 1791–1794 已是\"第一个广泛采用、比骑马送信更快的陆上通信系统\"，1795 年码本已含 8,940 个词组（https://www.historyofinformation.com/detail.php?id=429）；有线电报也早于 1844——Cooke–Wheatstone 1837-07-25 演示、1839-04-09 商用（21km）（https://www.historyofinformation.com/detail.php?id=3059）。原出处只有虎嗅转述，属科普口径。1844 只承重\"美国首条长途线\"。字幕 S05-1 已据此去掉\"第一次\"。"
+    },
+    {
+      "id": "shannon-1948",
+      "断言": "1948 年香农在贝尔实验室发表《通信的数学理论》(A Mathematical Theory of Communication) 创立信息论；bit（比特）作为信息量单位在该工作中确立，成为一切信息的统一度量",
+      "年份": "1948",
+      "出处URL": [
+        {
+          "url": "https://www.britannica.com/biography/Claude-Shannon",
+          "实抓要点": "Britannica 香农条目：1948 年发表《通信的数学理论》、奠定信息论数学基础；'bit'（binary digit）术语经其论文首次公开使用；任职贝尔实验室"
+        }
+      ],
+      "证据等级": "确证",
+      "rhetoric": false,
+      "备注": "剧本'香农给万物找到了同一把尺子'为概括修辞，史实内核=信息可被统一度量（本条）。S06 为零素材代码场，无素材核验项。"
+    },
+    {
+      "id": "turing-1950",
+      "断言": "图灵《计算机器与智能》(Computing Machinery and Intelligence, MIND, 1950) 开篇第一句：'I propose to consider the question, \"Can machines think?\"'",
+      "年份": "1950",
+      "出处URL": [
+        {
+          "url": "https://www.csee.umbc.edu/courses/471/papers/turing.pdf",
+          "实抓要点": "论文 PDF 本机抓取（UMBC 课程镜像，92KB）+ zlib 文本流抽取，命中页眉 'A. M. Turing (1950) Computing Machinery and Intelligence' 与开篇 'I propose to consider the question, \"Can machines think?\"'——一手原句逐字核到"
+        },
+        {
+          "url": "https://www.britannica.com/topic/Turing-test",
+          "实抓要点": "Britannica 图灵测试条目：'a test proposed in 1950 by English mathematician Alan Turing to determine if a machine can \"think\"'"
+        }
+      ],
+      "证据等级": "确证（一手原文）",
+      "rhetoric": false,
+      "备注": "S07 场景内文字 'Can machines think?' 拼写有原文逐字承重；QC 拼写专项据此核对。'六年后它有了名字'接 dartmouth-1956。"
+    },
+    {
+      "id": "dartmouth-1956",
+      "断言": "1956 年夏'达特茅斯人工智能夏季研讨会'举行；'artificial intelligence'一词首见 McCarthy 等人为该会议所写的 1955 年提案",
+      "年份": "1955（提案）/1956（会议）",
+      "出处URL": [
+        {
+          "url": "http://jmc.stanford.edu/articles/dartmouth.html",
+          "实抓要点": "McCarthy 本人生前维护的斯坦福官方页（一手）：页面标题 'A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence'；正文 'The proposal...was, so far as I know, the first use of phrase Artificial Intelligence'"
+        }
+      ],
+      "证据等级": "确证",
+      "rhetoric": false,
+      "备注": "提案写于 1955-08-31、会议于 1956 年夏举行（通行纪年；本页即 1955 年提案原文并自注术语首用）。剧本'1956 年它有了名字'与通行表述一致——严格说'名'生于 1955 年提案、'实'成于 1956 年会议，字幕口径无碍。"
+    },
+    {
+      "id": "eliza-1966",
+      "断言": "1966 年 MIT 魏岑鲍姆 (Joseph Weizenbaum, 1923 柏林生) 发表 ELIZA（ Communications of the ACM 9(1):36–45）；DOCTOR 脚本模拟罗杰斯派心理治疗师、把用户的话反转为问题；用户开始向它倾诉私密，开发者本人因此警觉、后成最早的 AI 批评者（1976《Computer Power and Human Reason》）",
+      "年份": "1966（论文）；1976（著作）",
+      "出处URL": [
+        {
+          "url": "https://kepuchina.cn/tech/ligent/201801/t20180119_536670.shtml",
+          "实抓要点": "科普中国（中国科协主办）：'1966年，麻省理工学院的德裔美国教授 Joseph Weizenbaum 揭开了 ELIZA 的面纱。ELIZA 是一名虚拟心理治疗师，在 IBM 7090 上运行'；'当 Weizenbaum 在人工智能实验室的同事们坐下来和 ELIZA 聊天时，他们开始卸下他们的心理负担'"
+        },
+        {
+          "url": "https://m.thepaper.cn/newsDetail_forward_26153094",
+          "实抓要点": "澎湃·上海书评（朱悦，2024-01-31）：魏岑鲍姆 1976《Computer Power and Human Reason: From Judgement to Calculation》（W.H. Freeman, January 1976）书目信息；'1968年即已投入实践的 ELIZA'；当时精神科医师已热议人机协作"
+        },
+        {
+          "url": "https://dbpedia.org/data/ELIZA.json",
+          "实抓要点": "DBpedia 结构化数据（本机抓取解析）：computingPlatform/platform = IBM_7090（7094 仅出现在无关 wikiLinks 包中，非平台断言）"
+        }
+      ],
+      "证据等级": "确证（1966 论文、DOCTOR 行为、用户倾诉现象）；运行主机型号=通说（双二手源一致 7090，一手论文未直核）；秘书'要求独处'轶事=通说（出自 1976 书、广泛转引，实抓页未直书）",
+      "rhetoric": false,
+      "备注": "⚠️ 7090/7094 专项结论（任务书K3拍板项2）：已实抓源（科普中国正文+DBpedia computingPlatform）双源一致=IBM 7090；7094 异说无实抓源作为平台断言支持；一手论文（dl.acm.org/doi/10.1145/365153.365168）被 Cloudflare 403、三个镜像 404，未能直核。结论：facts 采用 IBM 7090 口径并注明异说；剧本'画面不写型号'的做法维持（已遵守）。⚠️ 秘书轶事：剧本'该场唯一事实'行提到'其秘书甚至要求他离席以与 ELIZA 单独交谈'——出自魏岑鲍姆本人 1976 书、被广泛转引，但本回合实抓两页未直书该细节，列通说；剧本字幕未用该细节（字幕2'只肯对它说的话'由'同事倾诉'实抓源承重），风险可控。"
+    },
+    {
+      "id": "deepblue-1997",
+      "断言": "1997 年 5 月，IBM 深蓝在纽约六局对抗赛以 3.5–2.5 战胜国际象棋世界冠军卡斯帕罗夫，成为首个在标准时限正式比赛中击败在任世界冠军的计算机系统；决胜第 6 局（1997-05-11）卡斯帕罗夫仅走 19 步即停钟认输",
+      "年份": "1997-05（决胜局 05-11）",
+      "出处URL": [
+        {
+          "url": "https://www.ibm.com/history/deep-blue",
+          "实抓要点": "IBM 官史（Heritage）页：'In May of that year, it became the first computer system to defeat a reigning world chess champion in a match under standard tournament controls'；'six-game marathon against Garry Kasparov'；'Deep Blue prevailed in the tension-filled Game 6, thereby achieving a resounding victory, 3.5–2.5, in the rematch'；并注明深蓝以暴力搜索(brute-force)见长"
+        },
+        {
+          "url": "https://www.kepuchina.cn/kpcs/lcb/lcb5/201705/t20170511_197992.shtml",
+          "实抓要点": "科普中国（中国科技网稿，2017-05-11）：'1997年5月11日...六局对抗赛降下帷幕。在前五局以2.5对2.5打平的情况下，卡斯帕罗夫在第六盘决胜局中仅走了19步就向深蓝拱手称臣。整场比赛进行了不到一个小时'"
+        }
+      ],
+      "证据等级": "确证",
+      "rhetoric": false,
+      "备注": "IBM 官史给 5 月/第6局/3.5–2.5/首胜定性；科普中国给 5-11 具体日与 19 步——两源拼合后剧本两条字幕全部逐点有源。字幕1'三十年'=1966→1997 取整修辞（剧本 rhetoric_flag=false 但属转写，误差≤1年，可接受）。深蓝=暴力搜索路线，与 S10 Transformer 的学习路线构成叙事对照（storyboard/QC 可复用）。"
+    },
+    {
+      "id": "transformer-2017",
+      "断言": "2017 年 6 月论文《Attention Is All You Need》（arXiv:1706.03762，Submitted 12 Jun 2017；Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin 八人，Google）提出 Transformer，以注意力机制取代循环与卷积",
+      "年份": "2017-06-12（arXiv 提交日）",
+      "出处URL": [
+        {
+          "url": "https://arxiv.org/abs/1706.03762",
+          "实抓要点": "arXiv 摘要页本机抓取：标题逐字 'Attention Is All You Need'；'Submitted on 12 Jun 2017'；作者名单逐字抽到全部八人（Vaswani/Shazeer/Parmar/Uszkoreit/Jones/Gomez/Kaiser/Polosukhin）"
+        }
+      ],
+      "证据等级": "确证",
+      "rhetoric": false,
+      "备注": "QC 专项承重页：场内题名须逐字 'Attention Is All You Need'、下缘小字 'Vaswani et al. · 2017'。'此后主流大模型几乎都出自这一架构'为剧本事实行的通行判断，不落字幕。"
+    },
+    {
+      "id": "musk-bootloader-2026",
+      "断言": "马斯克'人类是硅基智能的生物引导程序'（biological bootloader）表述——2026 年 1 月德州超级工厂深度访谈等多场合；属思辨观点，非史实",
+      "年份": "2026-01（实抓源）等多场合",
+      "出处URL": [
+        {
+          "url": "https://www.woshipm.com/kol/6322382.html",
+          "实抓要点": "人人都是产品经理·笔记侠（2026-01-10）：'马斯克在最新访谈中预言，2026年将是通用人工智能(AGI)的转折点……他提出人类是硅基智能的\"生物引导程序\"'；场合=德州超级工厂深度访谈"
+        }
+      ],
+      "证据等级": "确证（该表述确出自本人、多场合——表述出处本身）；观点内容=修辞演绎",
+      "rhetoric": true,
+      "备注": "同观点另有达沃斯'生物启动程序 (Biological Bootloader)'版本（虎嗅 2026-02 稿，检索命中未直抓）——各场合用词略异，facts 锁定中文口径'生物引导程序'+2026.1 访谈出处。S11 字幕1'碳基文明只是硅基文明的初始库'为该观点的修辞性转写，QC 对照以本条口径为准；'观点不伪装成定论'由 rhetoric=true 落实。"
+    },
+    {
+      "id": "sutskever-nexttoken-2023",
+      "断言": "Ilya Sutskever 多次公开表述：只要能把下一个 token 预测得足够好，就意味着理解了产生它的潜在现实（英文原句 'Predicting the next token well means that you understand the underlying reality that led to the creation of that token'）；属思辨观点，非史实",
+      "年份": "2023（多场合；任务书所记'2023.3'的月份未能独立核到）",
+      "出处URL": [
+        {
+          "url": "https://www.ithome.com/0/740/476.htm",
+          "实抓要点": "IT之家转新智元（2023-12-20，背景=Nature 评其为'2023 年十大科学人物'）：全文命中中文转译——'很好地预测下一个token意味着你了解导致这个token创建的潜在实例……为了理解这些统计数据并对其进行压缩，你需要了解创建这组统计数据的世界'；并载其'曾经多次强调'此观点"
+        }
+      ],
+      "证据等级": "观点确证（本人多场合表述、实抓全文命中中文转译）；英文逐字原句与'2023.3'月份=存疑（多轮检索只回到新智元系转载链，未获一手英文页）",
+      "rhetoric": true,
+      "备注": "两细项降级原因见 _meta 待定项②：建议下游引用用'2023 年多次公开表述'而非锁定月份；S11 字幕2'预测下一个词，需要的正是智慧'为观点转写，QC 以本条中文口径为准。该观点在学界有实质争议（'预测≠理解'的质疑存在），facts 不背书为定论（rhetoric=true 已落实）。"
+    },
+    {
+      "id": "agi-timelines-2025",
+      "断言": "AGI 时间表两种预测并存——①Hassabis（DeepMind CEO）：AGI'很可能会在五到十年内开始出现'（2025.4 CBS 专访与同期伦敦媒体简报会口径；2026-01 进一步收窄为'5 年内、还差 1–2 个 AlphaGo 级别的突破'）；②AI Impacts 2023 专家调查（'Thousands of AI Authors on the Future of AI'，2,778 名在顶级 AI 期刊/会议发表过论文的研究者）：高能力机器智能(HLMI)在 2047 年达 50% 概率（中位口径）",
+      "年份": "2025.4 / 2026.1（Hassabis）；2024-01（调查公布）；2047（调查中位）",
+      "出处URL": [
+        {
+          "url": "https://arxiv.org/abs/2401.02843",
+          "实抓要点": "arXiv 摘要页：题名 'Thousands of AI Authors on the Future of AI'；摘要 'In the largest survey of its kind, 2,778 researchers who had published in top-tier artificial intelligence...'；2047 出现于摘要"
+        },
+        {
+          "url": "https://new.qq.com/rain/a/20240107A05AVE00",
+          "实抓要点": "腾讯·DeepTech深科技（2024-01-07）：'这项 2778 名专业研究人员的调查……2047年AI在所有任务胜过人类可能性为50%'；作者含 AI Impacts 首席研究员 Katja Grace 等"
+        },
+        {
+          "url": "https://www.weiyangx.com/446588.html",
+          "实抓要点": "未央网：'AGI 很可能会在五到十年内开始出现'——伦敦 DeepMind 办公室媒体简报会表态"
+        },
+        {
+          "url": "https://www.ithome.com/0/914/278.htm",
+          "实抓要点": "IT之家转新智元（2026-01-18）：'或许仅需一两个 AlphaGo 级别的突破，我们就有望在 5 年内见证 AGI 降临，而它的速度和影响力将 10 倍于工业革命'"
+        }
+      ],
+      "证据等级": "确证（四源两翼独立）；Hassabis CBS 专访原页未直抓（CBS 反爬），口径由实抓的简报会报道+2026.1 表态承重，与任务书'5–10 年'一致",
+      "rhetoric": false,
+      "备注": "S12 字幕2'有人猜它五年内开，有人说还要等二十年'——'五年内'=Hassabis 2026.1 实抓口径；'二十年'=2047 中位（2025→2047≈22 年的取整转写），两处均可在实抓页核到。QC 专项对照通过。调查中位数随问卷批次会漂移，若日后引用须带'2023 调查、2024-01 公布'的时间戳。"
+    }
+  ]
+}
